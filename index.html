@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário!</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div id="container">
+        <div id="present-container" onclick="openPresent()">
+            <div id="lid" class="part"></div>
+            <div id="box" class="part"></div>
+            <div id="ribbon-vertical" class="ribbon"></div>
+            <div id="ribbon-horizontal" class="ribbon"></div>
+        </div>
+       
+
+        <div id="message" class="hidden">
+
+            <main>
+                <h1>Parabéns, Isaa! &lt;3</h1>
+
+                <p>Oi, Isaa! &lt;3</p>
+                
+                <p>Parabéns, linda! Te desejo o mundo, porque sei que você já o tem.</p>
+                <p>Saiba que você tem um mundo inteiro pela frente, onde vai encontrar vitórias e derrotas, mas isso vai ser moleza para você. Afinal, você é a definição de perfeição. Você é linda, inteligente, fofa, atenciosa e merece tudo de bom nesse mundo.</p>
+                <p>Se precisar de alguém para te entender, estarei sempre aqui. Alguém que, às vezes, não é tão bom de conversa, mas é ótimo em ouvir.</p>
+                <p>Se houver alguma dúvida em seu coração, saiba que eu posso responder. Porque conheço a verdade sobre você: a verdade de que você é uma pessoa incrível, completando mais um ano de vida. E, assim como agora, amanhã e sempre, você vai continuar sendo você — uma pessoa de outro mundo.</p>
+                <p>OBS: Click no gatinho. (Tem som) </p>
+            <div id="gif-container">
+                <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="GIF Happy Happy Happy" onclick="playMusic()">
+            </div>
+        </div>
+    </div>
+</main>
+    <!-- Áudio do barulho de presente -->
+    <audio id="present-sound">
+        <source src="https://www.soundjay.com/button/sounds/button-16.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <!-- Áudio do meme "Happy Happy Happy" -->
+    <audio id="background-music">
+        <source src="https://www.myinstants.com/media/sounds/happy-happy-happy.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script src="js.js"></script>
+</body>
+</html>

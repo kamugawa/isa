@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffcccc;
+
+    text-align: center;
+}
+
+.core{
+width: 150px;
+height: auto;
+margin-left: 500px;
+margin-top: -310px;
+
+}
+.core2{
+    width: 150px;
+    height: auto;
+    margin-right: 500px;
+    margin-top: -330px;
+    
+    }
+h1 {
+    color: #e74c3c; /* Vermelho amoroso para os títulos */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #2c3e50; /* Texto escuro suave */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+p::first-letter {
+    font-size: 1.5em; /* Primeira letra maior para um efeito especial */
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+h1:last-of-type {
+    margin-top: 40px;
+    font-size: 2.5em;
+}
+
+/* Efeito de transição suave no hover */
+main:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    main {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}
+
+/* Adaptação adicional para resoluções muito pequenas */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+
+/* Media Query para dispositivos móveis */
+
+#container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+main{
+    zoom: 90%;
+align-items: center;
+margin: 0 auto;
+margin-bottom: 250px;
+
+
+}
+#present-container {
+
+    width: 180px;
+    height: 180px;
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    transition: opacity 0.5s ease;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.part {
+    margin-top: 500px;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: #e74c3c;
+    border-radius: 10px;
+    transition: transform 0.7s ease;
+}
+
+#lid {
+    top: 0;
+    height: 60px;
+    z-index: 2;
+    background-color: #e74c3c;
+}
+
+#box {
+   
+    top: 60px;
+    height: 120px;
+    z-index: 1;
+    background-color: #e74c3c;
+}
+
+.ribbon {
+    margin-top: 500px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#ribbon-vertical {
+    width: 20px;
+    height: 180px;
+    left: 80px;
+}
+
+#ribbon-horizontal {
+    width: 180px;
+    height: 20px;
+    top: 80px;
+}
+
+#message {
+    zoom: 75%;
+    background-color: #ffffff; /* Fundo branco para o conteúdo */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.567);
+    max-width: 800px;
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin: 20px; /* Adiciona espaço nas laterais */
+    text-align: center;
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+  margin-bottom: 200px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#message h1 {
+    font-size: 2.9em;
+    color: #ff6b6b;
+}
+
+#message p {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#gif-container img {
+    width: 200px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#gif-container img:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    visibility: hidden;
+}
